@@ -1,0 +1,24 @@
+.slide-button {
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+    background-color: transparent;
+    font-weight: normal;
+    transition: 0.3s;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+.button-icon {
+    margin-left: 3px;
+    transition: transform 0.3s linear;
+}
+
+.slide-button:hover .button-icon {
+    transform: rotate(90deg);
+}
+
+.slide-button:hover {
+    background-color: rgba(0, 121, 107, 0.5);
+    cursor: pointer;
+}

@@ -2,6 +2,8 @@
 
 .app {
   text-align: center;
+  background-color: #eeeeee;
+  font-family: 'Roboto', sans-serif;
 }
 
 .welcome {
@@ -19,32 +21,79 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Roboto', sans-serif;
     font-size: xx-large;
     font-weight: bold;
 }
 
-.main-button {
-    padding: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: x-large;
-    background-color: transparent;
-    font-weight: normal;
-    transition: 0.3s;
-    border: 3px solid black;
+.intro {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    align-items: center;
+}
+
+.intro-grid-full-row {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media screen and (max-width: 1200px) {
+    .intro-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        position: relative;
+        align-items: center;
+    }
+    
+    .intro-grid-full-row {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .intro {
+        width: 100vw;
+        position: relative;
+    }
+}
+
+.app h1 {
+    padding-top: 2rem;
+    text-decoration: underline;
+}
+
+.intro h2 {
     display: inline-block;
+    font-weight: normal;
+    margin: 0 2rem;
+    margin-bottom: 3rem;
 }
 
-.button-icon {
-    margin-left: 3px;
-    transition: transform 0.3s linear;
+.ppic {
+    display: inline-block;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 2px solid #00adb5;
+  
+    object-fit: cover;
 }
 
-.main-button:hover .button-icon {
-    transform: rotate(90deg);
+.value {
+    display: inline-block;
+    margin: 2rem 1rem;
 }
 
-.main-button:hover {
-    background-color: rgba(0, 121, 107, 0.5);
-    cursor: pointer;
+.experience {
+    width: 100vw;
+    min-height: 100vh;
+    padding-bottom: 5rem;
 }

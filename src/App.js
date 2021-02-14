@@ -2,8 +2,13 @@ import './App.css';
 import AppBar from './components/AppBar';
 import IconHolder from './components/IconHolder';
 import SlideButton from './components/SlideButton';
+import Badge from './components/Badge';
 
 import PPic from './assets/pp.jpg';
+import FrontendPic from './assets/frontend.jpg';
+import ConsultantPic from './assets/consultant.jpg';
+import FullstackPic from './assets/fullstack.jpg';
+import IotPic from './assets/iot.jpg';
 
 function App() {
   return (
@@ -18,7 +23,7 @@ function App() {
         <div className="intro">
             <h1>Who am I?</h1>
             <div className="intro-grid">
-                <div className="intro-grid-ppic">
+                <div>
                     <img className="ppic" src={PPic} />
                 </div>
                 <div className="value">
@@ -38,6 +43,23 @@ function App() {
         </div>
         <div className="experience">
             <h1>My Experiences</h1>
+            <div className="experiences-grid">
+                <div className="experiences-grid-item">
+                    <Badge pic={FrontendPic} text="Frontend Developer" />
+                </div>
+                <div>
+                    <Badge pic={ConsultantPic} text="Senior Development Consultant for SAP solutions" />
+                </div>
+                <div>
+                    <Badge pic={IotPic} text="SAP IoT Solutions Developer" />
+                </div>
+                <div>
+                    <Badge pic={FullstackPic} text="Fullstack Developer" />
+                </div>
+                <h2 className="experiences-grid-full-row">
+                Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development 
+                </h2>
+            </div>
         </div>
     </div>
   );

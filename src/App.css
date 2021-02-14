@@ -26,18 +26,17 @@
 }
 
 .intro {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
     width: 100vw;
-    min-height: 100vh;
-    position: relative;
+    margin-bottom: 1rem;
 }
 
 .intro-grid {
     display: grid;
     grid-template-columns: 50% 50%;
     max-width: 1000px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     align-items: center;
 }
 
@@ -83,7 +82,6 @@
     height: 15rem;
     border-radius: 50%;
     border: 2px solid #00adb5;
-  
     object-fit: cover;
 }
 
@@ -94,6 +92,42 @@
 
 .experience {
     width: 100vw;
-    min-height: 100vh;
-    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+
+.experiences-grid {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 1000px;
+    align-items: center;
+    grid-gap: 1rem;
+}
+
+.experiences-grid-full-row {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0 1rem;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1200px) {
+    .experiences-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        position: relative;
+        align-items: center;
+    }
+    
+    .experiences-grid-full-row {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .experience {
+        width: 100vw;
+        position: relative;
+    }
 }

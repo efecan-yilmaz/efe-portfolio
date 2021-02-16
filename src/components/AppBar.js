@@ -4,7 +4,10 @@ import './AppBar.css';
 export default function AppBar() {
     return (
         <div className="app-bar">
-            ASDASDASDASD
+            <a>Welcome!</a>
+            <a>Intro</a>
+            <a>Experiences</a>
+            <a>Contact</a>
         </div>
     )
 }

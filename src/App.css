@@ -7,7 +7,7 @@
 }
 
 .welcome {
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
     height: 100vh;
     background-image: url('./assets/welcome.jpg');
     background-position: center;
@@ -29,8 +29,7 @@
     display: grid;
     grid-template-columns: 100%;
     justify-items: center;
-    width: 100vw;
-    margin-bottom: 1rem;
+    width: calc(100vw - (100vw - 100%));
 }
 
 .intro-grid {
@@ -59,9 +58,14 @@
     }
 
     .intro {
-        width: 100vw;
+        width: calc(100vw - (100vw - 100%));
         position: relative;
     }
+}
+
+.value {
+    display: inline-block;
+    margin: 2rem 0;
 }
 
 .app h1 {
@@ -72,8 +76,7 @@
 .intro h2 {
     display: inline-block;
     font-weight: normal;
-    margin: 0 2rem;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
 }
 
 .ppic {
@@ -85,13 +88,8 @@
     object-fit: cover;
 }
 
-.value {
-    display: inline-block;
-    margin: 2rem 1rem;
-}
-
 .experience {
-    width: 100vw;
+    width: calc(100vw - (100vw - 100%));
     display: grid;
     grid-template-columns: 100%;
     justify-items: center;
@@ -127,7 +125,7 @@
     }
 
     .experience {
-        width: 100vw;
+        width: calc(100vw - (100vw - 100%));
         position: relative;
     }
 }

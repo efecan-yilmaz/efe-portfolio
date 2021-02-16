@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './IconHolder.css';
 
-import { Cpu, Codesandbox, Sun, MessageSquare, Mic, XCircle } from 'react-feather';
+import { Cpu, Codesandbox, Sun, MessageSquare, Mic, 
+    XCircle, Camera, Music, Headphones, TrendingUp, BookOpen } from 'react-feather';
 
 export default function IconHolder(props) {
     const [icon, setIcon] = useState();
@@ -23,6 +24,21 @@ export default function IconHolder(props) {
                 break;
             case 'mic':
                 icon = (<Mic />);
+                break;
+            case 'camera':
+                icon = (<Camera />);
+                break;
+            case 'music':
+                icon = (<Music />);
+                break;
+            case 'headphones':
+                icon = (<Headphones />);
+                break;
+            case 'trending':
+                icon = (<TrendingUp />);
+                break;
+            case 'book':
+                icon = (<BookOpen />);
                 break;
             default:
                 icon = (<XCircle />);

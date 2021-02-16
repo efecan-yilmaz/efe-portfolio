@@ -1,5 +1,36 @@
 .app-bar {
-    background-color: rgba(0, 121, 107, 0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: calc(100vw - (100vw - 100%));
+    background-color: rgba(57, 62, 70, 0.7);
     height: 3rem;
-    text-align: left;
+    text-align: right;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.app-bar a {
+    margin-right: 2rem;
+    font-weight: bold;
+}
+
+.app-bar > a {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+    .app-bar a {
+        margin-right: 1rem;
+    }
+    
+    .app-bar > a {
+        margin-left: 1rem;
+    }
+}
+
+.app-bar a:hover {
+    cursor: pointer;
+    color: #a4ebf3;
 }

@@ -9,6 +9,7 @@ import FrontendPic from './assets/frontend.jpg';
 import ConsultantPic from './assets/consultant.jpg';
 import FullstackPic from './assets/fullstack.jpg';
 import IotPic from './assets/iot.jpg';
+import RomePic from './assets/rome.jpg';
 
 function App() {
   return (
@@ -34,10 +35,24 @@ function App() {
                     <IconHolder icon="mic" text="Include every team member to create the best value"/>
                 </div>
                 <div className="intro-grid-full-row">
-                    <h2>Hi! I am Efe. I am a front-end developer who pursues the goal of creating high performance apps with clean codes. I am a strict believer of team-work and communication. And I am a passionate JavaScript warior. Wanna know about my experiences?</h2>
+                    <h2>Hi! I am Efe. I am a front-end developer who pursues the goal of creating high performance apps with clean codes. I am a strict believer of team-work and communication. And I am a passionate JavaScript warior. Want to know about my experiences?</h2>
                 </div>
                 <div className="intro-grid-full-row">
                     <SlideButton selector=".experience" text="Yes!" />
+                </div>
+                <div className="intro-grid-full-row">
+                    <h2>Or maybe about some social interests?</h2>
+                </div>
+                <div>
+                <img className="ppic" src={RomePic} />
+                </div>
+                <div className="value">
+                    <IconHolder icon="camera" text="Best Photographer in Qualityland" />
+                    <IconHolder icon="music" text="Country Guitarist" />
+                    <IconHolder icon="headphones" text="Jazz Enthusiast" />
+                    <IconHolder icon="trending" text="Not so-pro Climber" />
+                    <IconHolder icon="book" text="History Nerd *S.P.Q.R.*" />
+                    
                 </div>
             </div>
         </div>

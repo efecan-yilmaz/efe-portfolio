@@ -7,3 +7,25 @@
   
     object-fit: cover;
 }
+
+.pic.rect {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 0%;
+}
+
+.badge {
+    margin-bottom: 2rem;
+}
+
+.badge a {
+    display: block;
+    margin-top: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.badge a:hover {
+    cursor: pointer;
+    color: #524141
+}

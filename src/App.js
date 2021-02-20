@@ -10,6 +10,7 @@ import ConsultantPic from './assets/consultant.jpg';
 import FullstackPic from './assets/fullstack.jpg';
 import IotPic from './assets/iot.jpg';
 import RomePic from './assets/rome.jpg';
+import PigeonPic from './assets/pigeon.jpg';
 
 function App() {
   return (
@@ -41,23 +42,29 @@ function App() {
                     <SlideButton selector=".experience" text="Yes!" />
                 </div>
                 <div className="intro-grid-full-row">
+                    <h2>Or just contact me?</h2>
+                </div>
+                <div className="intro-grid-full-row">
+                    <SlideButton selector=".contact" text="Why not!" />
+                </div>
+                <div className="intro-grid-full-row">
                     <h2>Or maybe about some social interests?</h2>
                 </div>
                 <div>
-                <img className="ppic" src={RomePic} />
+                    <img className="ppic" src={RomePic} />
                 </div>
                 <div className="value">
-                    <IconHolder icon="camera" text="Best Photographer in Qualityland" />
                     <IconHolder icon="music" text="Country Guitarist" />
                     <IconHolder icon="headphones" text="Jazz Enthusiast" />
-                    <IconHolder icon="trending" text="Not so-pro Climber" />
                     <IconHolder icon="book" text="History Nerd *S.P.Q.R.*" />
+                    <IconHolder icon="trending" text="Not so-pro Climber" />
+                    <IconHolder icon="camera" text="Best Photographer in Qualityland" />
                     
                 </div>
             </div>
         </div>
         <div className="experience">
-            <h1>My Experiences</h1>
+            <h1>My Experience</h1>
             <div className="experiences-grid">
                 <div className="experiences-grid-item">
                     <Badge pic={FrontendPic} text="Frontend Developer" />
@@ -72,9 +79,19 @@ function App() {
                     <Badge pic={FullstackPic} text="Fullstack Developer" />
                 </div>
                 <h2 className="experiences-grid-full-row">
-                Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development Hi! Development 
+                    My main focus for the last 4 years is on frontend development. I am fluent with cutting-edge frontend technologies like ES6, TypeScript, React.js, GraphQL... 
+                </h2>
+                <h2 className="experiences-grid-full-row">
+                    I have 4 years of consultant experience as a FullStack Web Developer. This gives me unique communication skills. As a consultant, I had to work closely with customers and all shareholders in agile environments. I have a good understanding of what shareholders want and how I can achieve it with the most performant and clean development.
+                </h2>
+                <h2 className="experiences-grid-full-row">
+                    I worked as a FullStack developer for most of my career. Therefore I have quite knowledge about backend technologies and how to design smart MicroServices.
                 </h2>
             </div>
+        </div>
+        <div className="contact">
+            <h1>Contact Me!</h1>
+                <Badge pic={PigeonPic} url="https://www.linkedin.com/in/efecan-yilmaz-077a8058/" linkText="Via LinkedIn"/>            
         </div>
     </div>
   );

@@ -129,3 +129,11 @@
         position: relative;
     }
 }
+
+.contact {
+    padding-bottom: 5rem;
+}
+
+.contact h1 {
+    margin-bottom: 3rem;
+}

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './IconHolder.css';
 
 import { Cpu, Codesandbox, Sun, MessageSquare, Mic, 
     XCircle, Camera, Music, Headphones, TrendingUp, BookOpen } from 'react-feather';

@@ -35,9 +35,7 @@ function App() {
                     <IconHolder icon="message-square" text="Communication with peers and customers"/>
                     <IconHolder icon="mic" text="Include every team member to create the best value"/>
                 </div>
-                <div className="intro-grid-full-row">
-                    <h2>Hi! I am Efe. I am a front-end developer who pursues the goal of creating high performance apps with clean codes. I am a strict believer of team-work and communication. And I am a passionate JavaScript warior. Want to know about my experiences?</h2>
-                </div>
+                <h2 className="intro-grid-full-row">Hi! I am Efe. I am a frontend developer who pursues the goal of creating high performance apps with clean codes. I am a strict believer in team-work and communication and I am a passionate JavaScript warrior. Want to know about my experiences?</h2>
                 <div className="intro-grid-full-row">
                     <SlideButton selector=".experience" text="Yes!" />
                 </div>
@@ -82,10 +80,10 @@ function App() {
                     My main focus for the last 4 years is on frontend development. I am fluent with cutting-edge frontend technologies like ES6, TypeScript, React.js, GraphQL... 
                 </h2>
                 <h2 className="experiences-grid-full-row">
-                    I have 4 years of consultant experience as a FullStack Web Developer. This gives me unique communication skills. As a consultant, I had to work closely with customers and all shareholders in agile environments. I have a good understanding of what shareholders want and how I can achieve it with the most performant and clean development.
+                    I have 4 years of consultant experience as a fullstack Web Developer. This gives me unique communication skills. As a consultant, I had to work closely with customers and all shareholders in agile environments. I have a good understanding of what shareholders want and how I can achieve it with the most performant and clean development.
                 </h2>
                 <h2 className="experiences-grid-full-row">
-                    I worked as a FullStack developer for most of my career. Therefore I have quite knowledge about backend technologies and how to design smart MicroServices.
+                    I worked as a fullstack developer for most of my career. Therefore I have extensive knowledge about backend technologies and how to design smart MicroServices.
                 </h2>
             </div>
         </div>

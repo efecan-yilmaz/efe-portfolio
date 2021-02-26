@@ -14,7 +14,7 @@ import PigeonPic from './assets/pigeon.jpg';
 
 function App() {
   return (
-    <div className="app">
+    <main className="app">
         <AppBar />
         <div className="welcome">
             <div>
@@ -22,7 +22,7 @@ function App() {
                 <SlideButton selector=".intro" text="Click to learn more!" />
             </div>
         </div>
-        <div className="intro">
+        <article className="intro">
             <h1>Who am I?</h1>
             <div className="intro-grid">
                 <div>
@@ -60,8 +60,8 @@ function App() {
                     
                 </div>
             </div>
-        </div>
-        <div className="experience">
+        </article>
+        <article className="experience">
             <h1>My Experience</h1>
             <div className="experiences-grid">
                 <div className="experiences-grid-item">
@@ -77,7 +77,7 @@ function App() {
                     <Badge pic={FullstackPic} text="Fullstack Developer" />
                 </div>
                 <h2 className="experiences-grid-full-row">
-                    My main focus for the last 4 years is on frontend development. I am fluent with cutting-edge frontend technologies like ES6, TypeScript, React.js, GraphQL... 
+                    My main focus for the last 4 years is on frontend development. I am fluent with cutting-edge frontend technologies like JavaScript ES6, TypeScript, React.js, GraphQL... 
                 </h2>
                 <h2 className="experiences-grid-full-row">
                     I have 4 years of consultant experience as a fullstack Web Developer. This gives me unique communication skills. As a consultant, I had to work closely with customers and all shareholders in agile environments. I have a good understanding of what shareholders want and how I can achieve it with the most performant and clean development.
@@ -86,12 +86,12 @@ function App() {
                     I worked as a fullstack developer for most of my career. Therefore I have extensive knowledge about backend technologies and how to design smart MicroServices.
                 </h2>
             </div>
-        </div>
-        <div className="contact">
+        </article>
+        <article className="contact">
             <h1>Contact Me!</h1>
                 <Badge pic={PigeonPic} url="https://www.linkedin.com/in/efecan-yilmaz-077a8058/" linkText="Via LinkedIn"/>            
-        </div>
-    </div>
+        </article>
+    </main>
   );
 }
 

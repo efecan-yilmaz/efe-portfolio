@@ -65,7 +65,7 @@ function App() {
             <h1>My Experience</h1>
             <div className="experiences-grid">
                 <div className="experiences-grid-item">
-                    <Badge pic={FrontendPic} text="Frontend Developer" />
+                    <Badge pic={FrontendPic} text="Senior Frontend Developer" />
                 </div>
                 <div>
                     <Badge pic={ConsultantPic} text="Senior Development Consultant for SAP solutions" />
@@ -77,7 +77,7 @@ function App() {
                     <Badge pic={FullstackPic} text="Fullstack Developer" />
                 </div>
                 <h2 className="experiences-grid-full-row">
-                    My main focus for the last 4 years is on frontend development. I am fluent with cutting-edge frontend technologies like JavaScript ES6, TypeScript, React.js, GraphQL... 
+                    My main focus for the last 4 years is on frontend development. I am fluent with cutting-edge frontend technologies like JavaScript, TypeScript, React.js, GraphQL... 
                 </h2>
                 <h2 className="experiences-grid-full-row">
                     I have 4 years of consultant experience as a fullstack Web Developer. This gives me unique communication skills. As a consultant, I had to work closely with customers and all shareholders in agile environments. I have a good understanding of what shareholders want and how I can achieve it with the most performant and clean development.

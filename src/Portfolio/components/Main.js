@@ -1,5 +1,8 @@
 import React from 'react';
+
 import './Main.css';
+import AppHeader from '../../Shared/components/AppHeader';
+import AppBar from './AppBar';
 import IconHolder from './IconHolder';
 import SlideButton from './SlideButton';
 import Badge from './Badge';
@@ -13,9 +16,20 @@ import RomePic from '../../assets/rome.jpg';
 import PigeonPic from '../../assets/pigeon.jpg';
 
 export const Main = () => {
+    const onLinkClick = (className) => {
+        document.querySelector('.' + className).scrollIntoView({behavior: 'smooth'});
+    }
+
     return (
         <>
-            <div className="welcome">
+        <AppHeader sourceType="portfolio">
+            <a key='welcome'>Welcome!</a>
+            <a key='intro'>Intro</a>
+            <a key='experience'>Experiences</a>
+            <a key='contact'>Contact</a>
+        </AppHeader>
+            {/* <AppBar /> */}
+        <div className="welcome">
             <div>
                 <p>Welcome! I'm Efe.</p>
                 <SlideButton selector=".intro" text="Click to learn more!" />

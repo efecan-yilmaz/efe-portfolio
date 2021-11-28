@@ -9,6 +9,7 @@ function App() {
         <main className="app">
             <Routes>
                 <Route exact path="/" element={<PortfolioMain/>} />
+                <Route exact path="/blog" element={<BlogMain/>} />
             </Routes>
         </main>
     </Router>

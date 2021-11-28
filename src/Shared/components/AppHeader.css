@@ -1,11 +1,11 @@
 .app-header-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     text-align: center;
-    background: #FFF;
+    background: #eeeeee;
     opacity: 0;
     z-index: -1;
     visibility: hidden;
@@ -19,13 +19,13 @@
 }
 
 .app-header-nav::before {
-	 content: '';
-    position: absolute;
+	content: '';
+    position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: -15px;
-    background: #FEDC2A;
+    background: #00adb5;
     transform-origin: 0 0;
     transform: skew(-14deg) translateX(-120%);
     transition: all .275s .1s;
@@ -49,36 +49,12 @@
     margin: .5rem 0;
     text-align: right;
     transform: skew(16deg);
-}
-
-.app-header-nav a {
-    opacity: 0;
-    transform: translateY(-10px);
+	cursor: pointer;
 }
 
 .app-header-nav.open a {
     opacity: 1;
     transform: translateY(0);
-}
-
-.app-header-nav li:nth-child(1) a {
-	transition: all 275ms 175ms
-}
-
-.app-header-nav li:nth-child(2) a {
-	transition: all 275ms 225ms
-}
-
-.app-header-nav li:nth-child(3) a {
-	transition: all 275ms 275ms
-}
-
-.app-header-nav li:nth-child(4) a {
-	transition: all 275ms 325ms
-}
-
-.app-header-nav li:nth-child(5) a {
-	transition: all 275ms 375ms
 }
 
 .app-header-nav ul,
@@ -94,6 +70,8 @@
 	font-size: 1.4em;
 	text-decoration: none;
 	font-weight: bold;
+    opacity: 0;
+    transform: translateY(-10px);
 }
 
 .btn-app-header {
@@ -141,10 +119,12 @@
 
 .open .btn-app-header-icon {
 	transform: skew(5deg) translateY(-8px) rotate(-45deg);
+	background: #fff;
 }
 
 .open .btn-app-header-icon:before {
 	transform: translateY(0px) skew(-10deg) rotate(75deg);
+	background: #fff;
 }
 
 .open .btn-app-header-icon:after {

@@ -2,24 +2,32 @@ import React, {useRef} from 'react';
 
 import './AppHeader.css'
 
-const AppHeader = ({sourceType, children}) => {
+const AppHeader = ({headerType, children}) => {
     const header = useRef();
     const headerBtn = useRef();
 
-    const onButtonRequest = e => {
+    const onButtonClick = e => {
         headerBtn.current.classList.toggle('open');
         header.current.classList.toggle('open');
     }
 
+    const onMenuClick = (key, hType) => {
+        if (hType === 'samePage') {
+            headerBtn.current.classList.remove('open');
+            header.current.classList.remove('open');
+            document.querySelector('.' + key).scrollIntoView({behavior: 'smooth'});
+        }
+    }
+
     return (
         <>
-        <button className="btn-app-header" onClick={onButtonRequest} ref={headerBtn}>
+        <button className="btn-app-header" onClick={onButtonClick} ref={headerBtn}>
             <span className="btn-app-header-icon"></span>
             <span className="btn-app-header-text">Menu</span>
         </button>
         <nav className="app-header-nav" ref={header}>
             <ul>
-                {children.map(child => {return (<li>{child}</li>)})}
+                {children.map(child => <li key={child.key} onClick={() => {onMenuClick(child.key, headerType)}}>{child}</li>)}
             </ul>
         </nav>
         </>

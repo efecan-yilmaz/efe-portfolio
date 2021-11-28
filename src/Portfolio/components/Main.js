@@ -22,7 +22,7 @@ export const Main = () => {
 
     return (
         <>
-        <AppHeader sourceType="portfolio">
+        <AppHeader headerType="samePage">
             <a key='welcome'>Welcome!</a>
             <a key='intro'>Intro</a>
             <a key='experience'>Experiences</a>

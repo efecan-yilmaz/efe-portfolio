@@ -12,7 +12,7 @@ const AppHeader = ({headerType, children}) => {
     }
 
     const onMenuClick = (key, hType) => {
-        if (hType === 'samePage') {
+        if (hType === 'samePage' && key !== 'blog') {
             headerBtn.current.classList.remove('open');
             header.current.classList.remove('open');
             document.querySelector('.' + key).scrollIntoView({behavior: 'smooth'});

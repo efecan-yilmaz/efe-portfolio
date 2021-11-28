@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 import './Main.css';
 import AppHeader from '../../Shared/components/AppHeader';
@@ -23,10 +24,11 @@ export const Main = () => {
     return (
         <>
         <AppHeader headerType="samePage">
-            <a key='welcome'>Welcome!</a>
-            <a key='intro'>Intro</a>
-            <a key='experience'>Experiences</a>
-            <a key='contact'>Contact</a>
+            <a key="welcome">Welcome!</a>
+            <a key="intro">Intro</a>
+            <a key="experience">Experiences</a>
+            <a key="contact">Contact</a>
+            <Link key="blog" to="/blog">Blog</Link>
         </AppHeader>
             {/* <AppBar /> */}
         <div className="welcome">

@@ -28,7 +28,7 @@ export const Main = () => {
             <a key="intro">Intro</a>
             <a key="experience">Experiences</a>
             <a key="contact">Contact</a>
-            <Link key="blog" to="/blog">Blog</Link>
+            {/* <Link key="blog" to="/blog">Blog</Link> */}
         </AppHeader>
             {/* <AppBar /> */}
         <div className="welcome">

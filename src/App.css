@@ -2,6 +2,9 @@
 
 .app {
   text-align: center;
-  background-color: #eeeeee;
   font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  display: inline-block;
 }

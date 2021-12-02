@@ -1,6 +1,9 @@
 import React from 'react';
 import { initializeApp } from "firebase/app";
 
+import './Main.css';
+import ShellBar from './ShellBar';
+
 export const Main = () => {
 
     const firebaseConfig = {
@@ -18,8 +21,11 @@ export const Main = () => {
     console.log(app);
 
     return (
-        <div>
-            <h1>Welcome to blog</h1>
+        <>
+        <div className="title-div">
+            <h1 className="main-title">Code Hoarder - the blog -</h1>
         </div>
+        <ShellBar />
+        </>
     )
 }

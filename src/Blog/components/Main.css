@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.app {
+    background-color: #fff;
+}
+
+.title-div {
+    text-align: left;
+    padding: 1rem;
+}
+
+h1.main-title {
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    padding: 0;
+}

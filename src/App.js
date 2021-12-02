@@ -10,7 +10,7 @@ function App() {
         <main className="app">
             <Routes>
                 <Route exact path="/" element={<PortfolioMain />} />
-                {/* <Route exact path="/blog" element={<BlogMain />} /> */}
+                <Route exact path="/blog" element={<BlogMain />} />
                 <Route path='*' element={<Navigate to="/404" />} />
                 <Route path='/404' element={<NotFound />} />
             </Routes>

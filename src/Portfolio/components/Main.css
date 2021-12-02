@@ -1,3 +1,6 @@
+.app {
+  background-color: #eeeeee;
+}
 
 .welcome {
     width: calc(100vw - (100vw - 100%));

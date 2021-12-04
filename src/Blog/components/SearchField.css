@@ -1,10 +1,23 @@
+.search-field-wrapper {
+    border: 2px solid #000;
+    width: 25rem;
+    display: inline-grid;
+    margin-right: 1rem;
+    grid-template-columns: 88% 12%;
+}
+
+@media screen and (max-width: 400px) {
+    .search-field-wrapper {
+        width: 100%;
+    }
+}
+
 .search-field-input {
     background-color: inherit;
-    border: 2px solid #000;
+    border: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    width: 30rem;
-    padding: 10px;
+    padding: 0.5rem;
 }
 
 .search-field-input:focus {
@@ -12,19 +25,22 @@
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #FFE0B2;
-  opacity: 1; /* Firefox */
+    color: #FFE0B2;
+    opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #FFA000;
+    color: #FFA000;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: #FFA000;
+    color: #FFA000;
 }
 
 .search-field-button {
+    border-left: 2px solid #000;
     cursor: pointer;
-    margin-left: 1rem;
+    align-self: center;
+    justify-self: center;
+    height: 100%;  
 }

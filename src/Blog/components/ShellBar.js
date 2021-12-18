@@ -3,10 +3,10 @@ import React from 'react';
 import './ShellBar.css';
 import SearchField from './SearchField';
 
-const ShellBar = () => {
+const ShellBar = ({onSearchRequest}) => {
     return (
         <div className="shell-bar-main">
-            <SearchField />
+            <SearchField onSearchRequest={onSearchRequest}/>
         </div>
     )
 }

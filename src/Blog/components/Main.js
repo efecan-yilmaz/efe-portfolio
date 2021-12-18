@@ -20,12 +20,16 @@ export const Main = () => {
 
     console.log(app);
 
+    const onSearchBarSearchRequest = (searchKey) => {
+        console.log('Search triggered: ', searchKey);
+    }
+
     return (
         <>
         <div className="title-div">
             <h1 className="main-title">Code Hoarder - the blog -</h1>
         </div>
-        <ShellBar />
+        <ShellBar onSearchRequest={onSearchBarSearchRequest}/>
         </>
     )
 }

@@ -67,6 +67,7 @@ export const Main = () => {
                     <img className="ppic" src={RomePic} />
                 </div>
                 <div className="value">
+                    <IconHolder icon="game-dev" text="Game Development" />
                     <IconHolder icon="music" text="Country Guitarist" />
                     <IconHolder icon="headphones" text="Jazz Enthusiast" />
                     <IconHolder icon="book" text="History Nerd *S.P.Q.R.*" />
@@ -92,13 +93,10 @@ export const Main = () => {
                     <Badge pic={FullstackPic} text="Fullstack Developer" />
                 </div>
                 <h2 className="experiences-grid-full-row">
-                    My main focus for the last 4 years is on frontend development. I am fluent with cutting-edge frontend technologies like JavaScript, TypeScript, React.js, GraphQL... 
+                    My main focus for the last 5 years has been on frontend development. I am fluent with cutting-edge frontend technologies like JavaScript, TypeScript, React.js, GraphQL... 
                 </h2>
                 <h2 className="experiences-grid-full-row">
-                    I have 4 years of consultant experience as a fullstack Web Developer. This gives me unique communication skills. As a consultant, I had to work closely with customers and all shareholders in agile environments. I have a good understanding of what shareholders want and how I can achieve it with the most performant and clean development.
-                </h2>
-                <h2 className="experiences-grid-full-row">
-                    I worked as a fullstack developer for most of my career. Therefore I have extensive knowledge about backend technologies and how to design smart MicroServices.
+                    I also have 4 years of consultant experience as a full-stack web developer. This gives me unique communication skills. As a consultant, I worked closely with customers and all shareholders in agile environments. I have a good understanding of what shareholders want and how I can achieve it with the most performant and clean development. Also working as a full-stack developer gave me extensive knowledge about backend technologies and how to design smart MicroServices.
                 </h2>
             </div>
         </article>

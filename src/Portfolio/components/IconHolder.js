@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { Cpu, Codesandbox, Sun, MessageSquare, Mic, 
-    XCircle, Camera, Music, Headphones, TrendingUp, BookOpen } from 'react-feather';
+    XCircle, Camera, Music, Headphones, TrendingUp, BookOpen, Zap } from 'react-feather';
 
 export default function IconHolder(props) {
     const [icon, setIcon] = useState();
@@ -38,6 +38,9 @@ export default function IconHolder(props) {
                 break;
             case 'book':
                 icon = (<BookOpen />);
+                break;
+            case 'game-dev':
+                icon = (<Zap />);
                 break;
             default:
                 icon = (<XCircle />);

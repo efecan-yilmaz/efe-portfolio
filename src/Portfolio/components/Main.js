@@ -47,10 +47,13 @@ export const Main = () => {
                     <IconHolder icon="cpu" text="High performance, responsive apps"/>
                     <IconHolder icon="sun" text="Clean and understandable code"/>
                     <IconHolder icon="codesandbox" text="Always progressive architecture"/>
-                    <IconHolder icon="message-square" text="Communication with peers and customers"/>
+                    <IconHolder icon="message-square" text="Communication with peers and stakeholders"/>
                     <IconHolder icon="mic" text="Include every team member to create the best value"/>
                 </div>
-                <h2 className="intro-grid-full-row">Hi! I am Efe. I am a frontend developer who pursues the goal of creating high performance apps with clean codes. I am a strict believer in team-work and communication and I am a passionate JavaScript warrior. Want to know about my experiences?</h2>
+                <h2 className="intro-grid-full-row">Hi! I am Efe. I am a frontend developer who pursues the goal of creating high performance apps with clean codes. I am a strict believer in team-work and communication and I am a passionate JavaScript warrior.</h2>
+                <div className="intro-grid-full-row">
+                    <h2>Want to know about my experiences?</h2>
+                </div>
                 <div className="intro-grid-full-row">
                     <SlideButton selector=".experience" text="Yes!" />
                 </div>
@@ -84,7 +87,7 @@ export const Main = () => {
                     <Badge pic={FrontendPic} text="Senior Frontend Developer" />
                 </div>
                 <div>
-                    <Badge pic={ConsultantPic} text="Senior Development Consultant for SAP solutions" />
+                    <Badge pic={ConsultantPic} text="Senior Web Development Consultant" />
                 </div>
                 <div>
                     <Badge pic={IotPic} text="SAP IoT Solutions Developer" />

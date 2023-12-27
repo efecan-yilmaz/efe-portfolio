@@ -50,7 +50,7 @@ export const Main = () => {
                     <IconHolder icon="message-square" text="Communication with peers and stakeholders"/>
                     <IconHolder icon="mic" text="Include every team member to create the best value"/>
                 </div>
-                <h2 className="intro-grid-full-row">Hi! I am Efe. I am a frontend developer who pursues the goal of creating high performance apps with clean codes. I am a strict believer in team-work and communication and I am a passionate JavaScript warrior.</h2>
+                <h2 className="intro-grid-full-row">Hi! I am Efe. I am a full stack cloud native developer who pursues the goal of creating high performance apps with clean code. I am a strict believer in team-work and communication. I am always in pursuit of progressive architecture, improved code quality and seamless DevOps.</h2>
                 <div className="intro-grid-full-row">
                     <h2>Want to know about my experiences?</h2>
                 </div>
@@ -74,7 +74,6 @@ export const Main = () => {
                     <IconHolder icon="music" text="Country Guitarist" />
                     <IconHolder icon="headphones" text="Jazz Enthusiast" />
                     <IconHolder icon="book" text="History Nerd *S.P.Q.R.*" />
-                    <IconHolder icon="trending" text="Not so-pro Climber" />
                     <IconHolder icon="camera" text="Best Photographer in Qualityland" />
                     
                 </div>
@@ -84,7 +83,10 @@ export const Main = () => {
             <h1>My Experience</h1>
             <div className="experiences-grid">
                 <div className="experiences-grid-item">
-                    <Badge pic={FrontendPic} text="Senior Frontend Developer" />
+                    <Badge pic={FullstackPic} text="Senior Cloud Native Developer" />
+                </div>
+                <div>
+                    <Badge pic={FrontendPic} text="Project Tech Lead" />
                 </div>
                 <div>
                     <Badge pic={ConsultantPic} text="Senior Web Development Consultant" />
@@ -92,14 +94,11 @@ export const Main = () => {
                 <div>
                     <Badge pic={IotPic} text="SAP IoT Solutions Developer" />
                 </div>
-                <div>
-                    <Badge pic={FullstackPic} text="Fullstack Developer" />
-                </div>
                 <h2 className="experiences-grid-full-row">
-                    My main focus for the last 5 years has been on frontend development. I am fluent with cutting-edge frontend technologies like JavaScript, TypeScript, React.js, GraphQL... 
+                    My main focus is to develop cloud native applications on agile, scalable and testable environments. I am fluent with cutting-edge technologies like JavaScript, TypeScript, React.js, Node.js, Express, GraphQL, Kubernetes... I have extensive knowledge on backend technologies and how to design smart MicroServices; as well as designing and implementing user friendly, mobile ready, responsive web applications.
                 </h2>
                 <h2 className="experiences-grid-full-row">
-                    I also have 4 years of consultant experience as a full-stack web developer. This gives me unique communication skills. As a consultant, I worked closely with customers and all shareholders in agile environments. I have a good understanding of what shareholders want and how I can achieve it with the most performant and clean development. Also working as a full-stack developer gave me extensive knowledge about backend technologies and how to design smart MicroServices.
+                    I also have 4 years of consultant experience as a full-stack web developer. This gives me unique communication skills. As a consultant, I worked closely with customers and all shareholders in agile environments. I have a good understanding of what shareholders want and how I can achieve it with the most performant and clean development.
                 </h2>
             </div>
         </article>

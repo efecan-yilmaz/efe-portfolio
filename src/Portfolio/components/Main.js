@@ -1,9 +1,7 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 
 import './Main.css';
 import AppHeader from '../../Shared/components/AppHeader';
-import AppBar from './AppBar';
 import IconHolder from './IconHolder';
 import SlideButton from './SlideButton';
 import Badge from './Badge';
@@ -50,7 +48,7 @@ export const Main = () => {
                     <IconHolder icon="message-square" text="Communication with peers and stakeholders"/>
                     <IconHolder icon="mic" text="Include every team member to create the best value"/>
                 </div>
-                <h2 className="intro-grid-full-row">Hi! I am Efe. I am a full stack cloud native developer who pursues the goal of creating high performance apps with clean code. I am a strict believer in team-work and communication. I am always in pursuit of progressive architecture, improved code quality and seamless DevOps.</h2>
+                <h2 className="intro-grid-full-row">Hi! I am Efe. I am an expert full stack cloud native developer who pursues the goal of creating high performance apps with clean code. I am a strict believer in team-work and communication. I am always in pursuit of progressive architecture, improved code quality and seamless DevOps.</h2>
                 <div className="intro-grid-full-row">
                     <h2>Want to know about my experiences?</h2>
                 </div>

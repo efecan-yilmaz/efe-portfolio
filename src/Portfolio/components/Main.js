@@ -83,7 +83,7 @@ export const Main = () => {
             <h1>My Experience</h1>
             <div className="experiences-grid">
                 <div className="experiences-grid-item">
-                    <Badge pic={FullstackPic} text="Senior Cloud Native Developer" />
+                    <Badge pic={FullstackPic} text="Expert Cloud Native Developer" />
                 </div>
                 <div>
                     <Badge pic={FrontendPic} text="Project Tech Lead" />
